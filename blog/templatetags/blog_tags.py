@@ -239,7 +239,7 @@ def gravatar_url(email, size=40):
     """获得gravatar头像"""
     email = email.encode('utf-8')
 
-    default = "https://resource.lylinux.net/image/2017/03/26/120117.jpg".encode('utf-8')
+    default = "blog/img/avatar.png".encode('utf-8')
 
     return "https://www.gravatar.com/avatar/%s?%s" % (
         hashlib.md5(email.lower()).hexdigest(), urllib.parse.urlencode({'d': default, 's': str(size)}))
