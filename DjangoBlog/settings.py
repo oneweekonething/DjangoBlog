@@ -22,12 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+#DEBUG = False
 TESTING = len(sys.argv) > 1 and sys.argv[1] == 'test'
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['oneweekonething.com','www.oneweekonething.com']
+ALLOWED_HOSTS = ['oneweekonething.com','www.oneweekonething.com','*']
 # Application definition
 
 INSTALLED_APPS = [
@@ -162,7 +162,7 @@ DATE_TIME_FORMAT = '%Y-%m-%d'
 
 SITE_NAME = '豆豆小记'
 SITE_URL = 'http://www.oneweekonething.com'
-SITE_DESCRIPTION = '吃饭睡觉打豆豆.'
+SITE_DESCRIPTION = '吃饭睡觉看豆豆.'
 SITE_SEO_DESCRIPTION = '小站主要用来分享和记录学习经验,教程,记录个人生活的点滴以及一些随笔.欢迎大家访问小站'
 SITE_SEO_KEYWORDS = 'linux,apache,mysql,服务器,ubuntu,shell,web,csharp,.net,asp,mac,swift,python,django'
 ARTICLE_SUB_LENGTH = 300
@@ -241,7 +241,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('DJANGO_EMAIL_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = os.environ.get('DJANGO_EMAIL_USER')
 # 设置debug=false 未处理异常邮件通知
-ADMINS = [('oneweekonething', 'root@oneweekonething.com')]
+ADMINS = [('oneweekonething', 'afayear@oneweekonething.com')]
 # 微信管理员密码(两次md5获得)
 WXADMIN = '995F03AC401D6CABABAEF756FC4D43C7'
 LOGGING = {
