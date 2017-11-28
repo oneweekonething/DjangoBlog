@@ -64,6 +64,7 @@ class ArticleListView(ListView):
 
     def get_queryset(self):
         key = self.get_queryset_cache_key()
+        key=key.replace(" ", "_") #解决缓存key不允许空格的崩溃
         value = self.get_queryset_from_cache(key)
         return value
 
