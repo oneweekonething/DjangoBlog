@@ -210,6 +210,13 @@ class TagDetailView(ArticleListView):
 def fileupload(request):
     if request.method == 'POST':
         response = []
+
+        temp = ""
+        for name in request.POST:
+            temp += u''.join(request.POST[name])
+        if temp != 'doudou':
+            return HttpResponse("only for dou dou")
+
         for filename in request.FILES:
             timestr = datetime.datetime.now().strftime('%Y/%m/%d')
             imgextensions = ['jpg', 'png', 'jpeg', 'bmp']
