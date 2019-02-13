@@ -27,7 +27,7 @@ DEBUG = False
 TESTING = len(sys.argv) > 1 and sys.argv[1] == 'test'
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['www.lylinux.net', '127.0.0.1', 'example.com']
+ALLOWED_HOSTS = ['www.oneweekonething.com', '127.0.0.1', 'example.com']
 # Application definition
 
 INSTALLED_APPS = [
@@ -160,11 +160,11 @@ LOGIN_URL = '/login/'
 TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
 DATE_TIME_FORMAT = '%Y-%m-%d'
 
-SITE_NAME = '且听风吟'
-SITE_URL = 'http://www.lylinux.net'
-SITE_DESCRIPTION = '大巧无工,重剑无锋.'
-SITE_SEO_DESCRIPTION = '小站主要用来分享和记录学习经验,教程,记录个人生活的点滴以及一些随笔.欢迎大家访问小站'
-SITE_SEO_KEYWORDS = 'linux,apache,mysql,服务器,ubuntu,shell,web,csharp,.net,asp,mac,swift,python,django'
+SITE_NAME = '一周一事'
+SITE_URL = 'http://www.oneweekonething.com'
+SITE_DESCRIPTION = '点点生活，滴滴琐事'
+SITE_SEO_DESCRIPTION = '记录技术学习的点滴，分享生活的琐事'
+SITE_SEO_KEYWORDS = 'Android，电影，豆豆，'
 ARTICLE_SUB_LENGTH = 300
 SHOW_GOOGLE_ADSENSE = False
 # bootstrap颜色样式
@@ -206,27 +206,27 @@ OAHUTH = {
     'sina': {
         'appkey': os.environ.get('SINA_APP_KEY'),
         'appsecret': os.environ.get('SINA_APP_SECRET'),
-        'callbackurl': 'http://www.lylinux.net/oauth/authorize?type=weibo'
+        'callbackurl': 'http://www.oneweekonething.com/oauth/authorize?type=weibo'
     },
     'google': {
         'appkey': os.environ.get('GOOGLE_APP_KEY'),
         'appsecret': os.environ.get('GOOGLE_APP_SECRET'),
-        'callbackurl': 'http://www.lylinux.net/oauth/authorize?type=google'
+        'callbackurl': 'http://www.oneweekonething.com/oauth/authorize?type=google'
     },
     'github': {
         'appkey': os.environ.get('GITHUB_APP_KEY'),
         'appsecret': os.environ.get('GITHUB_APP_SECRET'),
-        'callbackurl': 'http://www.lylinux.net/oauth/authorize?type=github'
+        'callbackurl': 'http://www.oneweekonething.com/oauth/authorize?type=github'
     },
     'facebook': {
         'appkey': os.environ.get('FACEBOOK_APP_KEY'),
         'appsecret': os.environ.get('FACEBOOK_APP_SECRET'),
-        'callbackurl': 'http://www.lylinux.net/oauth/authorize?type=facebook'
+        'callbackurl': 'http://www.oneweekonething.com/oauth/authorize?type=facebook'
     }
 }
 
 SITE_ID = 1
-BAIDU_NOTIFY_URL = "http://data.zz.baidu.com/urls?site=https://www.lylinux.net&token=1uAOGrMsUm5syDGn&type=original"
+BAIDU_NOTIFY_URL = "http://data.zz.baidu.com/urls?site=https://www.oneweekonething.com&token=1uAOGrMsUm5syDGn&type=original"
 
 # Emial:
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -241,9 +241,9 @@ EMAIL_HOST_PASSWORD = os.environ.get('DJANGO_EMAIL_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = os.environ.get('DJANGO_EMAIL_USER')
 # 设置debug=false 未处理异常邮件通知
-ADMINS = [('liangliang', 'liangliangyy@gmail.com')]
+ADMINS = [('oneweekonething', 'oneweekonething@gmail.com')]
 # 微信管理员密码(两次md5获得)
-WXADMIN = '995F03AC401D6CABABAEF756FC4D43C7'
+WXADMIN = '995F03AC401D6CABABAEF756FC4D7'
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
