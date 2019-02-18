@@ -21,7 +21,7 @@ from DjangoBlog.feeds import DjangoBlogFeed
 from django.views.decorators.cache import cache_page
 from django.conf import settings
 from django.conf.urls.static import static
-
+from views import page_not_found
 sitemaps = {
 
     'blog': ArticleSiteMap,
